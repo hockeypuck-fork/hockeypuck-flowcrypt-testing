@@ -1,0 +1,20 @@
+[hockeypuck]
+contact="0xF79362DA44A2D1DB"
+hostname="localhost"
+
+logfile="./hkp.log"
+loglevel="DEBUG"
+
+webroot="../../webroot/"
+
+[hockeypuck.openpgp.db]
+driver="postgres-jsonb"
+dsn="database=hkp port=5432 user=postgres password=docker sslmode=disable"
+
+[hockeypuck.conflux.recon]
+httpAddr=":11371"
+reconAddr=":11370"
+
+[hockeypuck.conflux.recon.partner.peer1]
+httpAddr="localhost:11372"
+reconAddr="localhost:11373"
